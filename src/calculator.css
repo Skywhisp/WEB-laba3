@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1.25rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input,
+select {
+  margin-bottom: .9375rem;
+}
+
+button {
+  padding: .625rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 1.25rem;
+}

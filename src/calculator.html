@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основы JS и git</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <h2>Калькулятор вкладов</h2>
+
+    <label for="depositType">Выберите тип вклада:</label>
+    <select id="depositType" onchange="updateTerms()" onload="updateTerms()">
+      <option value="popolnyaemy" selected>Пополняемый</option>
+      <option value="srochnyy">Срочный</option>
+    </select>
+
+    <label for="depositTerm">Выберите срок вклада:</label>
+    <select id="depositTerm"></select>
+
+    <label for="depositAmount">Введите сумму вклада:</label>
+    <input type="number" id="depositAmount" required />
+
+    <button onclick="calculate()">Рассчитать</button>
+
+    <div id="result"></div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
